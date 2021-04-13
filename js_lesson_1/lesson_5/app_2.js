@@ -25,7 +25,7 @@
 // ],
 
 const appBasket = {
-
+    clearCartButton: null,
     catalogs: [
         {
             name: 'сливы',
@@ -48,9 +48,15 @@ const appBasket = {
             count: 6,
         },
     ],
-
-    total: [],
-
+    clear() {
+        this.catalogs = []
+        console.log(this.catalogs)
+    },
+    clickButton() {
+        console.log(this.catalogs)
+        this.clearCartButton = document.querySelector('.cart-btn')
+        this.clearCartButton.addEventListener('click', () => this.clear())
+    },
     sumBasket() {
         return this.catalogs.reduce((total, item) => total + item.price * item.count, 0);
     },
@@ -78,6 +84,7 @@ const appBasket = {
     run() {
         this.createText()
         this.createProduct()
+        this.clickButton()
     },
 
     createProduct() {
