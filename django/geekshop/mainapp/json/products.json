@@ -1,0 +1,19 @@
+[{
+      "category": "Стулья",
+      "name": "Стул белый",
+      "image": "products_images/product-3-sm.jpg",
+      "short_desc": "Самый белый стул",
+      "description": "",
+      "price": "20000.00",
+      "quantity": 10
+  },
+  {
+      "category": "Столы",
+      "name": "Стол черный",
+      "image": "products_images/product-4_KHO3Gu5.jpg",
+      "short_desc": "",
+      "description": "",
+      "price": "3000.00",
+      "quantity": 2
+    }
+]

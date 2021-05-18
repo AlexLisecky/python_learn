@@ -18,13 +18,15 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
 import mainapp.views as mainapp
-from mainapp import urls
+
 
 urlpatterns = [
     path('', mainapp.main, name='main'),
-    path('products/', include(urls), name='products'),
+    path('products/', include('mainapp.urls', namespace='products')),
     path('contacts/', mainapp.contact, name='contacts'),
     path('admin/', admin.site.urls),
+    path('auth/', include('authapp.urls', namespace='auth')),
+    path('basket/', include('basketapp.urls', namespace='basket')),
 ]
 
 if settings.DEBUG:

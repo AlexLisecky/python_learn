@@ -82,12 +82,9 @@ html, body {
 }
 .basket {
 	display: block;
-	width: 23px;
-	height: 23px;	
+	width: 50px;
+	height: 50px;
 	background-image: url(img/basket.png);
-	position: absolute;
-	top: 63px;
-	left: 1210px;
 }
 
 .clearfix:after {
@@ -1070,3 +1067,8 @@ td:first-child {
 .related-products a:hover .text{
 	display: block;
 }
+
+.product_list {
+	padding-top: 50px;
+}
+
