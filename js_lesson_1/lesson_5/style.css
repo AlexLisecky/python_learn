@@ -1,0 +1,17 @@
+.cell_black {
+    height: 100px;
+    width: 100px;
+    background-color: black;
+}
+
+.cell_white {
+    height: 100px;
+    width: 100px;
+    background-color:white;
+}
+
+.cart-btn{
+    padding: 50px;
+}
+
+
